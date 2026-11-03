@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noe Velasco y Edilma Hernandez | Invitación de boda</title>
+  <meta name="description" content="Invitación de boda de Noe Velasco y Edilma Hernandez.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_GT">
+  <meta id="metaOgTitle" property="og:title" content="Noe Velasco y Edilma Hernandez | Invitación de boda">
+  <meta id="metaOgDescription" property="og:description" content="Invitación de boda de Noe Velasco y Edilma Hernandez.">
+  <meta id="metaOgImage" property="og:image" content="https://images.pexels.com/photos/39931209/pexels-photo-39931209.jpeg">
+  <meta id="metaKeywords" name="keywords" content="Noe Velasco, Edilma Hernandez, invitación de boda, Quetzaltenango">
+  <meta id="metaAuthor" name="author" content="Two Design | Invitaciones Digitales">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Noe Velasco y Edilma Hernandez | Invitación de boda">
+  <meta name="twitter:description" content="Invitación de boda de Noe Velasco y Edilma Hernandez.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/39931209/pexels-photo-39931209.jpeg">
+  <link rel="stylesheet" href="style.css?v=20261014">
+  <!-- (Opcional) Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Luxurious+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <!-- ===================== HERO / SOBRE (PORTADA) ===================== -->
+<header class="cover" id="cover">
+  <div class="cover-inner">
+    <p class="tag tag-animated" id="coverTag">Nos casamos</p>
+    <h1 class="couple" id="coverCouple">Noe Velasco <span class="amp">&amp;</span> Edilma Hernandez</h1>
+    <div class="envelope-wrap">
+      <button class="envelope-trigger" id="btnOpenEnvelope" type="button" aria-label="Abrir invitación">
+        <img class="envelope" src="Images/ENVELOPE.png" alt="Sobre invitación">
+      </button>
+    </div>
+
+    <div class="guest-card">
+      <div class="guest-line" id="guestCardName">Nombre del invitado</div>
+      <div class="guest-sub">Hemos reservado</div>
+      <div class="guest-seats">
+        <span id="guestCardSeats">x</span> <span id="guestCardSeatsTxt">lugares</span> en su honor
+      </div>
+    </div>
+
+    <button class="btn-primary" id="btnOpenInvite" type="button">
+      Abrir invitación
+    </button>
+
+  </div>
+
+</header>
+
+<button class="music-bubble" id="btnMusic" type="button" aria-label="Reproducir música">
+  <i class="fa-solid fa-play" aria-hidden="true"></i>
+</button>
+<a class="spotify-link" href="https://open.spotify.com/playlist/2rDP5ogx0IHwWsK59PW3Xt?si=3f46a7854d264d56&pt=6f9927099d39627d2020e9537e1b1c42" target="_blank" rel="noopener" hidden>Escuchar en Spotify</a>
+
+<audio id="bgMusic" preload="auto" loop>
+  <source id="bgMusicSource" src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ===================== CONTENIDO INVITACIÓN ===================== -->
+<main id="invitation" class="invitation" aria-hidden="true">
+
+  <!-- HERO FOTO -->
+  <section class="hero-photo fade-in-element" id="hero">
+    <div class="hero-overlay">
+      <div class="hero-composition fade-in-element">
+        <div class="hero-artwork">
+           <img id="heroMainImage" src="Images/E2.png" alt="Noe Velasco y Edilma Hernandez" class="hero-main-image">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRODUCCIÓN -->
+  <section class="introduction fade-in-element" id="introduction" aria-label="Introducción">
+    <div class="introduction-artwork">
+      <img src="Images/FRAGMENTO.png" alt="" class="introduction-fragment">
+      <img src="Images/RECORTE.png" alt="" class="introduction-cutout">
+   <p class="introduction-note">Guiados por la mano de Dios y la certeza de nuestro amor, y con la bendición de nuestros amados padres, hoy unimos nuestras vidas para siempre.</p>
+       <p class="introduction-couple introduction-label">Madre del novio</p>
+       <p class="introduction-couple">Elena Perez Rivera</p>
+       <p class="introduction-couple introduction-label">Padres de la novia</p>
+       <p class="introduction-couple">Jacobo Hernández Vásquez</p>
+       <p class="introduction-couple">Paulina Álvarez Pérez</p>
+    </div>
+  </section>
+  <section class="introduction-secondary fade-in-element" aria-label="Introducción complementaria">
+     <div class="introduction-secondary-artwork">
+       <img src="Images/RECORTE.png" alt="" class="introduction-secondary-cutout">
+       <a class="introduction-medallion-link" id="calendarBtn" href="#" target="_blank" rel="noopener">
+         <img src="Images/MEDALLON.png" alt="Agregar al calendario" class="introduction-medallion">
+       </a>
+       <img src="Images/TP1.png" alt="Decoración floral" class="introduction-secondary-tp">
+      <div class="date-paper-content">
+        <p class="date-paper-note">El amor escribió nuestra historia, y queremos que sea parte de este hermoso capítulo.</p>
+         <div class="date-display" aria-label="Sábado 12 de diciembre de 2026">
+            <span>Sábado</span><strong>12</strong><span>2026</span>
+        </div>
+        <p class="date-paper-day">El gran día</p>
+        <p class="date-paper-month">Diciembre</p>
+         <div class="calendar" aria-label="Calendario de diciembre de 2026">
+          <div class="calendar-weekdays"><span>D</span><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span></div>
+          <div class="calendar-days">
+              <span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+              <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span class="calendar-heart">12</span>
+              <span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span>
+              <span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span>
+              <span>27</span><span>28</span><span>29</span><span>30</span><span>31</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="location-separator fade-in-element" aria-hidden="true">
+    <img src="Images/S3.png" alt="" class="location-separator-image">
+  </section>
+
+  <section class="location-introduction fade-in-element" id="location" aria-label="Ubicación">
+    <div class="location-artwork">
+      <img src="Images/E3.png" alt="Ubicación del evento" class="location-main-image">
+      <img src="Images/RECORTEA.png" alt="" class="location-horizontal-cutout">
+      <div class="location-details">
+        <h2>Ubicación</h2>
+       <p class="location-venue">Iglesia Dios con Nosotros</p>
+       <p class="location-address">Quetzaltenango</p>
+       <a class="location-map-link" href="https://maps.app.goo.gl/6KDqLvMwFcD5CKHv9" target="_blank" rel="noopener">Cómo llegar</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="itinerary-editorial fade-in-element" id="itinerary">
+    <div class="itinerary-editorial-art">
+      <img src="Images/FRAGMENTO1.png" alt="" class="itinerary-fragment">
+        <div class="itinerary-editorial-note">
+          <h3 id="itineraryTitle">Itinerario</h3>
+
+          <div class="itinerary-track" id="timelineTrack">
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="dress-editorial fade-in-element" id="dressCode">
+    <div class="dress-panel-1">
+      <h3>Dress Code</h3>
+       <p>El color de los novios será gris y blanco. Les agradeceremos acompañarnos respetando esta paleta de colores para mantener la armonía de nuestra celebración.</p>
+    </div>
+    <img src="Images/TP1.png" alt="Decoración floral" class="dress-tp">
+  </section>
+
+ <section class="location-separator fade-in-element" aria-hidden="true">
+   <img src="Images/S2.png" alt="" class="location-separator-image">
+ </section>
+
+ <section class="gift-editorial playlist-editorial fade-in-element" id="playlistSection">
+    <img src="Images/FRAGMENTO1.png" alt="" class="playlist-background-fragment">
+    <div class="playlist-card">
+      <div class="gift-card-background" aria-hidden="true"></div>
+      <h3 id="giftTitle">Regalo</h3>
+      <p class="gift-editorial-text" id="giftText">Nuestra mayor alegría es compartir este día contigo. Si deseas tener un detalle con nosotros, agradeceremos con mucho cariño tu obsequio en efectivo dentro de nuestra lluvia de sobres.</p>
+    </div>
+  </section>
+
+<!-- ================= MODAL TRANSFERENCIA ================= -->
+<div id="transferBackdrop" class="transfer-backdrop" aria-hidden="true" style="display:none">
+  <div class="transfer-modal" role="dialog" aria-modal="true">
+
+    <button class="transfer-close" id="btnCloseTransfer" type="button">×</button>
+
+    <h3>Datos de Transferencia</h3>
+
+     <p class="transfer-names" id="transferNames">Edilma Hernandez</p>
+
+    <div class="transfer-info" id="transferData">
+      <p><strong>Medio:</strong> <span id="bankName"></span></p>
+      <p><strong>Cuenta monetaria:</strong> <span id="accountNumber"></span></p>
+      <p><strong>Tipo:</strong> <span id="accountType"></span></p>
+        <p><strong>Nombre:</strong> <span id="accountOwner">Edilma Hernandez</span></p>
+    </div>
+    
+    <button class="btn-outline copy-btn" id="btnCopyAccount" type="button">
+      Copiar datos bancarios
+    </button>
+
+    <div id="copyToast" class="copy-toast" style="display:none">✅ Copiado</div>
+
+  </div>
+</div>
+
+<section class="dress-editorial adults-editorial fade-in-element" id="adultsInfo">
+  <div class="dress-panel-1">
+    <h3>Solo Mayores de Edad</h3>
+    <p>Agradecemos tu comprensión al considerar que este evento ha sido planificado exclusivamente para adultos. Esperamos que disfrutes de una velada inolvidable junto a nosotros.</p>
+  </div>
+  <img src="Images/RECORTEG.png" alt="" class="dress-tp">
+</section>
+
+<section class="wishes fade-in-element" id="wishesSection">
+  <div class="wishes-background" aria-hidden="true"></div>
+  <img src="Images/TULIPAN.png" alt="" class="wishes-tulip" aria-hidden="true">
+  <h3 id="wishesTitle">Buenos deseos</h3>
+  <p class="wishes-intro" id="wishesIntro">Déjanos un mensaje especia para los novios, en este día tan especial.</p>
+  <div class="wishes-actions">
+    <button class="btn-outline" id="btnToggleWishForm" type="button" aria-controls="wishFormPanel" aria-expanded="false">Enviar un mensaje</button>
+    <button class="btn-outline" id="btnToggleWishes" type="button" aria-controls="wishesPanel" aria-expanded="false">Leer mensajes</button>
+  </div>
+  <div class="collapsible-panel" id="wishFormPanel" aria-hidden="true">
+    <form class="wish-form" id="wish-form">
+      <input id="wish-name" type="text" placeholder="Tu nombre" autocomplete="name" required>
+      <textarea id="wish-message" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+      <button class="btn-outline" type="submit">Enviar mensaje</button>
+      <p class="wish-status" id="wish-status" aria-live="polite"></p>
+    </form>
+  </div>
+  <div class="collapsible-panel" id="wishesPanel" aria-hidden="true">
+    <div class="wishes-list" id="wishes"></div>
+  </div>
+</section>
+
+<section class="adults-only fade-in-element" id="adultsOnlySection">
+  <h3 id="adultsOnlyTitle">Solo adultos</h3>
+  <p class="adults-only-text" id="adultsOnlyText">Amamos a sus pequeños; sin embargo, por las características del lugar y pensando en su seguridad, hemos decidido celebrar este momento únicamente entre adultos.</p>
+</section>
+
+<section class="rsvp fade-in-element" id="rsvpSection">
+  <div class="rsvp-editorial-art">
+    <h3 class="rsvp-editorial-title" id="rsvpTitle">Confirmar Asistencia</h3>
+    <p class="rsvp-strong rsvp-editorial-copy" id="rsvpCopy">
+      Para nosotros es muy importante que confirmes tu asistencia lo antes posible,
+      o bien indicarnos si no podrás acompañarnos.
+    </p>
+    <img src="Images/E4.png" alt="Confirmar asistencia" class="rsvp-editorial-image">
+
+    <div class="rsvp-editorial-note">
+      <form id="rsvp-form" class="rsvp-form" novalidate>
+        <div class="form-group">
+          <textarea id="rsvp-name" name="name" rows="2" readonly>Nombre del invitado</textarea>
+        </div>
+
+        <div class="form-group">
+          <p class="rsvp-label">Asistirás</p>
+          <div class="rsvp-response-group">
+            <label class="rsvp-radio-option" for="rsvp-response-yes">
+              <input type="radio" id="rsvp-response-yes" name="attendance" value="SI">
+              <span>Sí, con mucho gusto</span>
+            </label>
+            <label class="rsvp-radio-option" for="rsvp-response-no">
+              <input type="radio" id="rsvp-response-no" name="attendance" value="NO">
+              <span>No, lamentablemente no podré</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group" id="guest-count-wrapper" style="display:none">
+          <label for="guest-count">Cantidad de pases</label>
+          <select id="guest-count" name="guests" disabled></select>
+        </div>
+
+        <button type="submit" id="btnConfirmarRsvp">Confirmar asistencia</button>
+      </form>
+
+      <div id="msgRsvp" class="rsvp-msg" style="display:none"></div>
+    </div>
+  </div>
+</section>
+
+  <!-- CIERRE -->
+  <section class="closing fade-in-element" id="closing">
+    <div class="closing-card">
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div id="social-icons">
+<a id="footerFacebook" href="https://www.facebook.com/thetwodesign" target="_blank" aria-label="Facebook">
+  <i class="fab fa-facebook"></i>
+</a>
+    <a id="footerInstagram" href="https://www.instagram.com/thetwodesign" target="_blank" aria-label="Instagram">
+  <i class="fab fa-instagram"></i>
+</a>
+</div>
+    <div class="footer-logo">
+      <img id="footer-logo" alt="Logo de la empresa" src="Images/logo.png">
+    </div>
+  </footer>
+
+</main>
+<script src="config.js?v=20260930"></script>
+<script type="module" src="database.js?v=20260930"></script>
+<script src="loads.js?v=20260930"></script>
+<script src="rsvp.js?v=20260930"></script>
+<script type="module" src="wishes.js?v=20260930"></script>
+<script src="script.js?v=20260930"></script>
+</body>
+</html>
+  
