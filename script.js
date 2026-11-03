@@ -204,6 +204,29 @@ function renderInvitationContent() {
 document.addEventListener("DOMContentLoaded", () => {
   renderInvitationContent();
 
+  const lightbox = document.querySelector("#separatorLightbox");
+  const lightboxImage = document.querySelector("#separatorLightboxImage");
+  const closeLightbox = () => {
+    lightbox?.classList.remove("is-open");
+    lightbox?.setAttribute("aria-hidden", "true");
+  };
+
+  document.querySelectorAll(".location-separator-image").forEach((image) => {
+    image.addEventListener("click", () => {
+      if (!lightbox || !lightboxImage) return;
+      lightboxImage.src = image.src;
+      lightboxImage.alt = image.alt;
+      lightbox.classList.add("is-open");
+      lightbox.setAttribute("aria-hidden", "false");
+    });
+  });
+  lightbox?.addEventListener("click", (event) => {
+    if (event.target === lightbox || event.target.classList.contains("separator-lightbox-close")) closeLightbox();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeLightbox();
+  });
+
   // 1) Pintar invitado en portada (desde loads.js)
   paintGuestCard();
 

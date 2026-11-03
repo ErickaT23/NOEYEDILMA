@@ -748,6 +748,37 @@ a{
     width:min(95%, 360px);
     height:auto;
     object-fit:contain;
+    cursor:zoom-in;
+  }
+  .separator-lightbox{
+    position:fixed;
+    inset:0;
+    z-index:2000;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+    background:rgba(0,0,0,.86);
+  }
+  .separator-lightbox.is-open{ display:flex; }
+  .separator-lightbox img{
+    display:block;
+    max-width:92vw;
+    max-height:90vh;
+    width:auto;
+    height:auto;
+    object-fit:contain;
+  }
+  .separator-lightbox-close{
+    position:absolute;
+    top:16px;
+    right:18px;
+    border:0;
+    background:transparent;
+    color:#fff;
+    font-size:36px;
+    line-height:1;
+    cursor:pointer;
   }
   .location-seal{
     position:absolute;
