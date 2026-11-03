@@ -1430,20 +1430,25 @@ a{
     /* max-width:calc(100% - 36px); */
     height:260px;
     transform:translate(-50%, -50%);
-     background:url("Images/RECORTEA.png") center/cover no-repeat;
+      background:url("Images/RECORTEG.png") center/cover no-repeat;
     padding:18px;
     text-align:center;
     color:#ffffff;
     margin-top:-20px;
   }
+  .adults-editorial .dress-panel-1{
+    margin-top:10px;
+  }
   .dress-panel-1 h3{
     margin:auto;
+    margin-top:25px;
     padding:5px;
     display:inline-block;
     width:auto;
     font-family:var(--cursive);
-    font-size:25px;
-    font-weight:400;
+     font-size:25px;
+     font-weight:400;
+     background:var(--white-metallic);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent !important;
     background-clip:text;
@@ -1546,7 +1551,7 @@ a{
     font-family:var(--text);
     font-size:15px;
     line-height:1.25;
-    background:var(--gold-highlight);
+     background:var(--white-metallic);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
     background-clip:text;
@@ -1643,13 +1648,18 @@ a{
   .itinerary-editorial + .dress-editorial{
     margin-top:0;
   }
-  .dress-editorial h3,
   .gift-editorial h3,
   .wishes h3{
     margin:auto;
     font-family:var(--cursive);
     font-size:25px;
     background:var(--gold-highlight);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+  }
+  .dress-editorial h3{
+    background:var(--white-metallic);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
     background-clip:text;
