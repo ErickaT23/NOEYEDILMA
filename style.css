@@ -253,7 +253,7 @@
     font-family: var(--cursive);
     letter-spacing:.02em;
     text-transform:none;
-     background:var(--gold-highlight);
+     background:var(--gold-text);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
     background-clip:text;
@@ -528,7 +528,7 @@ a{
     padding:50px;
     top:40%;
     color:transparent;
-     background:var(--gold-highlight);
+     background:var(--white-metallic);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
     background-clip:text;
@@ -768,7 +768,7 @@ a{
     color:#7d2e18;
   }
   .location-details h2{
-    margin:auto;
+     margin:10px auto auto;
     font-family:var(--cursive);
     font-size:25px;
     background:var(--gold-highlight);
@@ -800,14 +800,25 @@ a{
     display:inline-block;
     padding:6px 10px;
     border:1px solid #aeb4bb;
-    background:transparent;
-    color:#45494f;
-    -webkit-text-fill-color:#45494f;
+     background:var(--white-metallic);
+     -webkit-background-clip:text;
+     -webkit-text-fill-color:transparent;
+     background-clip:text;
     font-family:var(--title);
     font-size:9px;
     text-decoration:none;
     text-transform:uppercase;
     margin-top:15px;
+  }
+  .location-details h2,
+  .location-venue,
+  .location-address,
+  .location-map-link{
+    background:var(--white-metallic);
+    color:transparent;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
   }
   .location-paper{
     position:absolute;
@@ -1275,7 +1286,7 @@ a{
     font-size:32px;
     font-weight:400;
     text-align:center;
-     background:var(--gold-highlight);
+     background:var(--white-metallic);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
     background-clip:text;
