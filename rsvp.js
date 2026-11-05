@@ -153,6 +153,18 @@ function formatGuestName(value) {
   return name.match(/.{1,25}(?:\s+|$)|.{1,25}/g)?.join("\n") || name;
 }
 
+function openWhatsAppNotification(invitado, respuesta, pasesSeleccionados) {
+  const status = respuesta === "SI" ? "CONFIRMO ASISTENCIA" : "NO PODRA ASISTIR";
+  const passes = respuesta === "SI" ? `\nCantidad confirmada: ${pasesSeleccionados}` : "";
+  const message = [
+    "Confirmación de asistencia",
+    `Invitado: ${invitado.nombre}`,
+    `Respuesta: ${status}${passes}`,
+  ].join("\n");
+
+  window.location.href = `https://wa.me/50251742310?text=${encodeURIComponent(message)}`;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   clearStoredConfirmations();
 
@@ -256,6 +268,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (res && (res.ok === true || res.success === true)) {
         await saveConfirmationToFirebase(invitado, respuesta, pasesSeleccionados);
+        openWhatsAppNotification(invitado, respuesta, pasesSeleccionados);
         const okMessage = respuesta === "SI"
           ? "Gracias por confirmar tu asistencia. Será un privilegio compartir este día contigo."
           : "Lamentamos que no puedas acompañarnos en esta ocasión y agradecemos de corazón tu respuesta.";
