@@ -121,7 +121,7 @@
     const mobileList = document.getElementById("confirmations-mobile-list");
 
     if (!rows.length) {
-      tbody.innerHTML = '<tr><td colspan="6" class="empty-state">No hay resultados para mostrar.</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="5" class="empty-state">No hay resultados para mostrar.</td></tr>';
       mobileList.innerHTML = '<div class="empty-state">No hay resultados para mostrar.</div>';
       return;
     }
@@ -130,7 +130,6 @@
       <tr>
         <td>${escapeHtml(row.id)}</td>
         <td>${escapeHtml(row.nombre)}</td>
-        <td>${escapeHtml(row.pasesAsignados)}</td>
         <td><span class="status-badge status-${escapeHtml(row.respuesta)}">${escapeHtml(row.respuesta === "si" ? "Confirmado" : row.respuesta === "no" ? "No asiste" : "Pendiente")}</span></td>
         <td>${escapeHtml(row.cantidadConfirmada || 0)}</td>
         <td>${escapeHtml(formatDate(row.fechaConfirmacion))}</td>
@@ -141,7 +140,6 @@
       <article class="mobile-card">
         <h3>${escapeHtml(row.nombre)}</h3>
         <div class="mobile-row"><span>ID</span><strong>${escapeHtml(row.id)}</strong></div>
-        <div class="mobile-row"><span>Pases</span><strong>${escapeHtml(row.pasesAsignados)}</strong></div>
         <div class="mobile-row"><span>Respuesta</span><strong>${escapeHtml(row.respuesta === "si" ? "Confirmado" : row.respuesta === "no" ? "No asiste" : "Pendiente")}</strong></div>
         <div class="mobile-row"><span>Confirmados</span><strong>${escapeHtml(row.cantidadConfirmada || 0)}</strong></div>
         <div class="mobile-row"><span>Fecha</span><strong>${escapeHtml(formatDate(row.fechaConfirmacion))}</strong></div>
@@ -150,11 +148,10 @@
   }
 
   function exportCsv(rows) {
-    const header = ["ID", "Nombre", "Pases asignados", "Respuesta", "Cantidad confirmada", "Fecha de confirmación"];
+    const header = ["ID", "Nombre", "Respuesta", "Cantidad confirmada", "Fecha de confirmación"];
     const csvRows = rows.map((row) => [
       row.id,
       row.nombre,
-      row.pasesAsignados,
       row.respuesta,
       row.cantidadConfirmada,
       formatDate(row.fechaConfirmacion),
