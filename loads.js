@@ -58,7 +58,7 @@ function applyGuest(guest) {
   const seatsTxtEl = document.getElementById("guestCardSeatsTxt");
   if (nameEl) nameEl.textContent = window.currentGuest.name;
   if (seatsEl) seatsEl.textContent = String(window.currentGuest.passes);
-  if (seatsTxtEl) seatsTxtEl.textContent = window.currentGuest.passes === 1 ? "lugar" : "lugares";
+  if (seatsTxtEl) seatsTxtEl.textContent = window.currentGuest.passes === 1 ? "lugar para ti" : "lugares para ustedes";
   window.dispatchEvent(new CustomEvent("guest:updated"));
 }
 

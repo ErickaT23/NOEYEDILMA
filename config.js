@@ -30,7 +30,7 @@ const config = {
     descripcion: "Invitación de boda de Noe Velasco y Edilma Hernandez.",
     autor: "Two Design",
     keywords: "Noe Velasco, Edilma Hernandez, invitación de boda, Quetzaltenango",
-    ogImage: "https://noscasamosnoeyedilma.thetwodesign.com/Images/S3.png"
+    ogImage: "https://noscasamosnoeyedilma.thetwodesign.com/Images/S3.png?v=20261104"
   },
   pareja: {
     nombres: "Noe Velasco & Edilma Hernandez",

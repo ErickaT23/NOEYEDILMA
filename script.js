@@ -278,12 +278,12 @@ function paintGuestCard() {
     nameEl.textContent = g.name;
     const p = Number(g.passes || 1);
     seatsEl.textContent = String(p);
-    if (seatsTxtEl) seatsTxtEl.textContent = p === 1 ? "lugar" : "lugares";
+    if (seatsTxtEl) seatsTxtEl.textContent = p === 1 ? "lugar para ti" : "lugares para ustedes";
   } else {
     // Si entraste sin ?id=
     nameEl.textContent = "Nombre del invitado";
     seatsEl.textContent = "x";
-    if (seatsTxtEl) seatsTxtEl.textContent = "lugares";
+    if (seatsTxtEl) seatsTxtEl.textContent = "lugares para ustedes";
   }
 }
 
