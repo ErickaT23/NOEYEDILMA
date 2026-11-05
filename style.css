@@ -328,6 +328,7 @@
   }
   
   .guest-sub{
+    display:none !important;
     font-size:11px;
     text-transform:uppercase;
     letter-spacing:.14em;
@@ -337,6 +338,7 @@
   }
   
   .guest-seats{
+    display:none !important;
     margin-top:4px;
     font-size:12px;
       background:var(--gradient-accent);

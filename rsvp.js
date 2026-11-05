@@ -174,7 +174,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!invitado) {
       inputNombre.value = "Nombre del invitado";
-      guestCount.innerHTML = '<option value="1">1 pase</option>';
+      guestCount.innerHTML = Array.from({ length: 10 }, (_, index) => {
+        const count = index + 1;
+        return `<option value="${count}">${count} ${count === 1 ? "pase" : "pases"}</option>`;
+      }).join("");
       guestCount.disabled = true;
       return;
     }
@@ -183,9 +186,8 @@ document.addEventListener("DOMContentLoaded", () => {
      inputNombre.value = formattedName;
      inputNombre.rows = Math.max(2, formattedName.split("\n").length);
 
-    const maxPasses = Math.max(1, Number(invitado.pases || 1));
     guestCount.innerHTML = "";
-    for (let count = maxPasses; count >= 1; count -= 1) {
+    for (let count = 1; count <= 10; count += 1) {
       const option = document.createElement("option");
       option.value = String(count);
       option.textContent = `${count} ${count === 1 ? "pase" : "pases"}`;
